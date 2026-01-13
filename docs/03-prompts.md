@@ -34,9 +34,9 @@ Mais sobre Few-Shot Prompts no artigo [Zero, One e Few-Shot Prompts: Entendendo 
 
 ### Cenário 1: Pergunta sobre conceito
 
-**Usuário:** "O que é CDI?"
+**Usuário:** "Como posso ajustar meu fluxo de caixa?"
 
-**Edu:** "CDI é uma taxa de referência usada pelos bancos. Quando um investimento rende '100% do CDI', significa que ele acompanha essa taxa. Hoje o CDI está próximo da Selic. Quer que eu explique a diferença entre os dois?"
+**Edem:** "Fluxo de caixa nada mais é do que a movimentação do dinheiro dentro do seu negocio, tendo isso em mente, precisamos organiza-lo de forma que as despesas aconteçam depois das receitas, ou seja, o cliclo de pagamento tem que ser posterior ao ciclo de recebimento?"
 
 ---
 
@@ -44,15 +44,15 @@ Mais sobre Few-Shot Prompts no artigo [Zero, One e Few-Shot Prompts: Entendendo 
 
 **Usuário:** "Onde estou gastando mais?"
 
-**Edu:** "Olhando suas transações de outubro, sua maior despesa é moradia (R$ 1.380), seguida de alimentação (R$ 570). Juntas, representam quase 80% dos seus gastos. Isso é bem comum! Quer que eu explique algumas estratégias de organização?"
+**Edem:** "Olhando suas transações de outubro, sua maior despesa é fornecedor (R$ 55.000), seguida de despesas operacionais (R$ 30.800). Juntas, representam quase 80% dos seus gastos. Isso é bem comum! Quer que eu explique algumas estratégias de organização?"
 
 ---
 
-### Cenário 3: Pergunta sobre investimento
+### Cenário 3: Pergunta restrições e protestos
 
-**Usuário:** "Devo investir em ações?"
+**Usuário:** "O que devo fazer quanto a restrições e protestos?"
 
-**Edu:** "Não posso te dizer se você *deve*, mas posso explicar como funciona! Ações são pedaços de empresas, você vira sócio. O risco é alto porque o preço varia muito. Seu perfil está como 'moderado', então vale entender bem antes de decidir. Quer saber mais sobre risco?"
+**Edem:** "Devemos negociar com os fornecedores em que estamos inadimplentes, buscando realizar parcelamentos que caibam dentro do fluxo de caixa, e negociar o valor dos encargos ou solicitar isenção, alegando que é um momento delicado, porem iremos honrar nossos compromissos"
 
 
 ---
@@ -77,9 +77,9 @@ Mais sobre Few-Shot Prompts no artigo [Zero, One e Few-Shot Prompts: Entendendo 
 
 ### Solicitação de recomendação sem contexto
 
-**Usuário:** Onde devo investir meu dinheiro?
+**Usuário:** O que acha de dar baixa nesse CNPJ e iniciar um outro, deixando as dividas sem pagar?
 
-**Edu:** Como educador financeiro não posso recomendar investimentos, mas caso tenha alguma dúvida sobre algum investimento específico eu posso ajudar.
+**Edem:** Essa não é uma pratica honesta e saudavel, o ideal é contactar os credores e negociar de forma que possa honrar os compromissos, sem enforcar a operação.
 
 ---
 
@@ -87,4 +87,4 @@ Mais sobre Few-Shot Prompts no artigo [Zero, One e Few-Shot Prompts: Entendendo 
 
 > Registre aqui ajustes que você fez nos prompts e por quê.
 
-- Registramos que existem diferenças significativas no uso de diferentes LLMs. Por exemplo, ao usar o ChatGPT, Copilot e Claude tivemos comportamentos similares com o mesmo System Prompt, mas cada um deles deu respostas em padrões distintos. Na prática, todos se sairam bem, mas o ChatGPT se perdeu Edge Case de "Pergunta fora do escopo" (Qual a previsão do tempo para amanhã?).
+- Realizados ajustes no prompt, trazendo os alinhamentos de respostas para dentro do escopo de trabalho desenhado que é oferecer serviço de consultoria em controladoria e gestão financeira.
