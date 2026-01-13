@@ -158,14 +158,30 @@ DADOS DO CLIENTE:
   "faturamento_mensal": 500000.00,
 
 RESUMO DE GASTOS:
-- Fornecedores: R$ 221.000,00
-- Despesas fixas: R$ 49.400,00
-- Despesas operacionais: R$ 99.300,00
-- Despesas comerciais: R$ 23.500,00
-- Despesas financeiras: R$ 2.800,00
-- Impostos: R$ 30.500,00
-- Despesas de manutenção: R$ 3.000,00
-- Despesas administrativas: R$ 6.000,00
+- Compra de estoque natalino : R$ 62000
+- Compra de estoque fornecedor C : R$ 55000
+- Pagamento folha funcionários : R$ 55000
+- Compra de estoque fornecedor A : R$ 32000
+- Aluguel loja : R$ 30500
+- Pagamento de folha : R$ 30000
+- Pagamento fornecedor D : R$ 25000
+- Compra de novos produtos : R$ 24000
+- Pagamento fornecedor B : R$ 23000
+- Impostos sobre vendas : R$ 21000
+- Pagamento de aluguel : R$ 15000
+- Marketing digital : R$ 14500
+- Impostos e encargos : R$ 9500
+- Marketing Natal : R$ 9000
+- Frete extra : R$ 6500
+- Serviço de consultoria : R$ 6000
+- Pagamento de transporte : R$ 4000
+- Frete e logística : R$ 3800
+- Serviço de manutenção elétrica : R$ 3000
+- Pagamento de energia elétrica : R$ 2700
+- Taxas financeiras : R$ 1600
+- Despesa com internet : R$ 1200
+- Taxas bancárias : R$ 1200
+
 
 PROGRAMAS DISPONÍVEIS PARA EXPLICAR:
 - Data Driven Management Program(DDMP)
