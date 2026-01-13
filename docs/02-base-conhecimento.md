@@ -12,9 +12,9 @@
 | Arquivo | Formato | Para que serve no Edu? |
 |---------|---------|---------------------|
 | `historico_atendimento.csv` | CSV | Contextualizar interações anteriores, ou seja, dar continuidade ao atendimento de forma mais eficiente. |
-| `perfil_investidor.json` | JSON | Personalizar as explicações sobre as dúvidas e necessidades de aprendizado do cliente. |
-| `produtos_financeiros.json` | JSON | Conhecer os produtos disponíveis para que eles possam ser ensinados ao cliente. |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente e usar essas informações de forma didática. |
+| `perfil_cliente.json` | JSON | Mapeamento do perfil do cliente, suas necessidades e abordagem indicada. |
+| `programas_consultoria.json` | JSON | Conhecer os produtos disponíveis para que eles possam ser ofertados ao cliente. |
+| `transacoes.csv` | CSV | Analisar padrão de fluxo de caixa do cliente e usar essas informações para analisar o cenario e tomar decisões. |
 
 ---
 
@@ -22,7 +22,11 @@
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-O produto Fundo Imobiliário (FII) substituiu o Fundo Multimercado, pois pessoalmente me sinto mais confiante em usar apenas produtos financeiros que eu conheço. Assim, poderei validar as respostas do Edu de forma mais assertiva.
+Modificados todos os dados, abaixo segue o que foi feito em alterações:
+historico de atendimento: Relatado da prospecção ao fechamento com o cliente
+perfild do cliente: Mapeamento de quem é o cliente e necessidades de atendimento
+Programas de consultoria: pacotes de serviço a serem ofertados
+Transações: movimentações financeira de teste pasa simular o historico do cliente
 
 ---
 
@@ -37,16 +41,16 @@ Existem duas possibilidades, injetar os dados diretamente no prompt (Ctrl + C, C
 import pandas as pd
 import json
 
-perfil = json.load(open('./data/perfil_investidor.json'))
+perfil = json.load(open('./data/perfil_cliente.json'))
 transacoes = pd.read_csv('./data/transacoes.csv')
 historico = pd.read_csv('./data/historico_atendimento.csv')
-produtos = json.load(open('./data/produtos_financeiros.json'))
+produtos = json.load(open('./data/programas_consultoria.json'))
 ```
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-Para simplificar, podemos simplesmente "injetar" os dados em nosso prompt, agarntindo que o Agente tenha o melhor contexto possível. Lembrando que, em soluções mais robustas, o ideal é que essas informaçoes sejam carregadas dinamicamente para que possamos ganhar flexibilidade.
+Para simplificar, podemos simplesmente "injetar" os dados em nosso prompt, gaarntindo que o Agente tenha o melhor contexto possível. Lembrando que, em soluções mais robustas, o ideal é que essas informaçoes sejam carregadas dinamicamente para que possamos ganhar flexibilidade.
 
 ```text
 DADOS DO CLIENTE E PERFIL (data/perfil_investidor.json):
