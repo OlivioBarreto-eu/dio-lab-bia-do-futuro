@@ -152,23 +152,22 @@ O exemplo de contexto montado abaixo, se baiseia nos dados originais da base de 
 
 ```
 DADOS DO CLIENTE:
-- Nome: João Silva
-- Perfil: Moderado
-- Objetivo: Construir reserva de emergência
-- Reserva atual: R$ 10.000 (meta: R$ 15.000)
+  "nome": "João & Silva LTDA",
+  "tempo de atividade": 5,
+ "objetivo_principal": "possibilitar gestão com dados, indicadores e ajustar o caixa",
+  "faturamento_mensal": 500000.00,
 
 RESUMO DE GASTOS:
-- Moradia: R$ 1.380
-- Alimentação: R$ 570
-- Transporte: R$ 295
-- Saúde: R$ 188
-- Lazer: R$ 55,90
-- Total de saídas: R$ 2.488,90
+- Fornecedores: R$ 221.000,00
+- Despesas fixas: R$ 49.400,00
+- Despesas operacionais: R$ 99.300,00
+- Despesas comerciais: R$ 23.500,00
+- Despesas financeiras: R$ 2.800,00
+- Impostos: R$ 30.500,00
+- Despesas de manutenção: R$ 3.000,00
+- Despesas administrativas: R$ 6.000,00
 
-PRODUTOS DISPONÍVEIS PARA EXPLICAR:
-- Tesouro Selic (risco baixo)
-- CDB Liquidez Diária (risco baixo)
-- LCI/LCA (risco baixo)
-- Fundo Imobiliário - FII (risco médio)
-- Fundo de Ações (risco alto)
+PROGRAMAS DISPONÍVEIS PARA EXPLICAR:
+- Data Driven Management Program(DDMP)
+- Financial Efficiency Program(FEP)
 ```
