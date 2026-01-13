@@ -55,25 +55,23 @@ Para simplificar, podemos simplesmente "injetar" os dados em nosso prompt, gaarn
 ```text
 DADOS DO CLIENTE E PERFIL (data/perfil_investidor.json):
 {
-  "nome": "João Silva",
-  "idade": 32,
-  "profissao": "Analista de Sistemas",
-  "renda_mensal": 5000.00,
-  "perfil_investidor": "moderado",
-  "objetivo_principal": "Construir reserva de emergência",
-  "patrimonio_total": 15000.00,
-  "reserva_emergencia_atual": 10000.00,
-  "aceita_risco": false,
+  "nome": "João & Silva LTDA",
+  "tempo de atividade": 5,
+  "Ramo de Atividade": "Comercio de eletronicos e variedades",
+  "faturamento_mensal": 500000.00,
+  "Nivel_de_organicao": "precario",
+  "objetivo_principal": "possibilitar gestão com dados, indicadores e ajustar o caixa",
+  "possui_restricao": true,
   "metas": [
     {
-      "meta": "Completar reserva de emergência",
-      "valor_necessario": 15000.00,
+      "meta": "Negociar fornecedores inadimplentes e organizar caixa",
+      "valor_necessario": 150000.00,
       "prazo": "2026-06"
     },
     {
-      "meta": "Entrada do apartamento",
-      "valor_necessario": 50000.00,
-      "prazo": "2027-12"
+      "meta": "Elaborar demonstrativos de resultado",
+      "valor_necessario": 0.00,
+      "prazo": "2026-06"
     }
   ]
 }
