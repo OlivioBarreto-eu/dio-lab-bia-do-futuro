@@ -78,16 +78,44 @@ DADOS DO CLIENTE E PERFIL (data/perfil_investidor.json):
 
 TRANSACOES DO CLIENTE (data/transacoes.csv):
 data,descricao,categoria,valor,tipo
-2025-10-01,Salário,receita,5000.00,entrada
-2025-10-02,Aluguel,moradia,1200.00,saida
-2025-10-03,Supermercado,alimentacao,450.00,saida
-2025-10-05,Netflix,lazer,55.90,saida
-2025-10-07,Farmácia,saude,89.00,saida
-2025-10-10,Restaurante,alimentacao,120.00,saida
-2025-10-12,Uber,transporte,45.00,saida
-2025-10-15,Conta de Luz,moradia,180.00,saida
-2025-10-20,Academia,saude,99.00,saida
-2025-10-25,Combustível,transporte,250.00,saida
+2025-10-01,Venda de smartphones,Receita de vendas,28000.00,entrada
+2025-10-02,Compra de estoque fornecedor A,Fornecedores,32000.00,saida
+2025-10-03,Pagamento de energia elétrica,Despesas fixas,2700.00,saida
+2025-10-05,Venda de acessórios,Receita de vendas,15000.00,entrada
+2025-10-07,Frete e logística,Despesas operacionais,3800.00,saida
+2025-10-10,Pagamento folha funcionários,Despesas operacionais,27000.00,saida
+2025-10-12,Receita online marketplace,Receita de vendas,22000.00,entrada
+2025-10-15,Pagamento fornecedor B,Fornecedores,23000.00,saida
+2025-10-18,Marketing digital,Despesas comerciais,6500.00,saida
+2025-10-20,Venda empresarial,Receita de vendas,40000.00,entrada
+2025-10-25,Taxas bancárias,Despesas financeiras,1200.00,saida
+2025-10-28,Pagamento de aluguel,Despesas fixas,15000.00,saida
+2025-10-30,Impostos sobre vendas,Impostos,9000.00,saida
+2025-11-01,Venda de Black Friday,Receita de vendas,90000.00,entrada
+2025-11-02,Compra de estoque fornecedor C,Fornecedores,55000.00,saida
+2025-11-03,Pagamento de transporte,Despesas operacionais,4000.00,saida
+2025-11-05,Serviço de manutenção elétrica,Despesas de manutenção,3000.00,saida
+2025-11-06,Receita de loja física,Receita de vendas,45000.00,entrada
+2025-11-07,Pagamento folha funcionários,Despesas operacionais,28000.00,saida
+2025-11-09,Receita via PIX,Receita de vendas,26000.00,entrada
+2025-11-12,Impostos e encargos,Impostos,9500.00,saida
+2025-11-15,Despesa com internet,Despesas fixas,1200.00,saida
+2025-11-18,Compra de novos produtos,Fornecedores,24000.00,saida
+2025-11-20,Venda corporativa,Receita de vendas,48000.00,entrada
+2025-11-25,Marketing digital,Despesas comerciais,8000.00,saida
+2025-11-28,Aluguel loja,Despesas fixas,15000.00,saida
+2025-11-30,Taxas financeiras,Despesas financeiras,1600.00,saida
+2025-12-01,Venda de natal,Receita de vendas,95000.00,entrada
+2025-12-02,Compra de estoque natalino,Fornecedores,62000.00,saida
+2025-12-05,Frete extra,Despesas operacionais,6500.00,saida
+2025-12-06,Serviço de consultoria,Despesas administrativas,6000.00,saida
+2025-12-07,Receita de vendas online,Receita de vendas,32000.00,entrada
+2025-12-10,Pagamento fornecedor D,Fornecedores,25000.00,saida
+2025-12-15,Venda corporativa,Receita de vendas,40000.00,entrada
+2025-12-20,Pagamento de folha,Despesas operacionais,30000.00,saida
+2025-12-22,Impostos sobre vendas,Impostos,12000.00,saida
+2025-12-27,Marketing Natal,Despesas comerciais,9000.00,saida
+2025-12-30,Aluguel loja,Despesas fixas,15500.00,saida
 
 HISTORICO DE ATENDIMENTO DO CLIENTE (data/historico_atendimento.csv):
 data,canal,tema,resumo,resolvido
