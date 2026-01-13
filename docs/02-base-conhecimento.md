@@ -93,11 +93,11 @@ data,descricao,categoria,valor,tipo
 
 HISTORICO DE ATENDIMENTO DO CLIENTE (data/historico_atendimento.csv):
 data,canal,tema,resumo,resolvido
-2025-09-15,chat,CDB,Cliente perguntou sobre rentabilidade e prazos,sim
-2025-09-22,telefone,Problema no app,Erro ao visualizar extrato foi corrigido,sim
-2025-10-01,chat,Tesouro Selic,Cliente pediu explicação sobre o funcionamento do Tesouro Direto,sim
-2025-10-12,chat,Metas financeiras,Cliente acompanhou o progresso da reserva de emergência,sim
-2025-10-25,email,Atualização cadastral,Cliente atualizou e-mail e telefone,sim
+2025-09-15,telefone,dificultade de caixa,Cliente buscou auxilio por dificuldades financeiras,sim
+2025-09-22,chat,Negociação do diagnostico,enviado orçamento ao cliente e aprovado,sim
+2025-10-01,in-loco,Realização do diagnsotico,levantamento aprofundado da real situação do cliente,sim
+2025-10-12,videochamada,Apresentação do diagnostico,apresentado e oferecidos programas e aceite por parte do cliente,sim
+2025-10-25,email,Informativo de agenda e inicio do trabalho,enviada agenda de atendimento e escopo do trabalho,sim
 
 PRODUTOS DISPONIVEIS PARA ENSINO (data/produtos_financeiros.json):
 [
