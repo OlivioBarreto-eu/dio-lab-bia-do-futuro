@@ -8,14 +8,14 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 MODELO = "gpt-oss"
 
 # ============ CARREGAR DADOS ============
-perfil = json.load(open('./data/perfil_investidor.json'))
+perfil = json.load(open('./data/perfil_cliente.json'))
 transacoes = pd.read_csv('./data/transacoes.csv')
 historico = pd.read_csv('./data/historico_atendimento.csv')
-produtos = json.load(open('./data/produtos_financeiros.json'))
+produtos = json.load(open('./data/programas_consultoria.json'))
 
 # ============ MONTAR CONTEXTO ============
 contexto = f"""
-CLIENTE: {perfil['nome']}, {perfil['idade']} anos, perfil {perfil['perfil_investidor']}
+CLIENTE: {perfil['nome']}, {perfil['idade']} anos, perfil {perfil['perfil_cliente']}
 OBJETIVO: {perfil['objetivo_principal']}
 PATRIMÔNIO: R$ {perfil['patrimonio_total']} | RESERVA: R$ {perfil['reserva_emergencia_atual']}
 
@@ -30,7 +30,7 @@ PRODUTOS DISPONÍVEIS:
 """
 
 # ============ SYSTEM PROMPT ============
-SYSTEM_PROMPT = """Você é o Edu, um educador financeiro amigável e didático.
+SYSTEM_PROMPT = """Você é o Edem, um educador financeiro amigável e didático.
 
 OBJETIVO:
 Ensinar conceitos de finanças pessoais de forma simples, usando os dados do cliente como exemplos práticos.
