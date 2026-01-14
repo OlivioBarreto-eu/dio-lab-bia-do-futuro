@@ -1,103 +1,67 @@
-# 🎓 Edu - Educador Financeiro Inteligente
+# 🏦 Edem - Consultor Virtual de Controladoria & Finanças
 
-> Agente de IA Generativa que ensina conceitos de finanças pessoais de forma simples e personalizada, usando os próprios dados do cliente como exemplos práticos.
+> Agente de IA Generativa especializado em consultoria empresarial e financeira. O Edem transforma dados brutos em inteligência estratégica, auxiliando na tomada de decisão de forma segura e local.
 
-## 💡 O Que é o Edu?
+## 💡 O Que é o Edem?
 
-O Edu é um educador financeiro que **ensina**, não recomenda. Ele explica conceitos como reserva de emergência, tipos de investimentos e análise de gastos usando uma abordagem didática e exemplos concretos baseados no perfil do cliente.
+O **Edem** (Evolutionary Data & Enterprise Management) é um consultor virtual desenvolvido para apoiar gestores e empreendedores. Diferente de chats genéricos, o Edem aplica conceitos de **controladoria e finanças empresariais** para analisar o cenário do negócio, identificar gargalos e sugerir caminhos estratégicos baseados em dados reais.
 
-**O que o Edu faz:**
-- ✅ Explica conceitos financeiros de forma simples
-- ✅ Usa dados do cliente como exemplos práticos
-- ✅ Responde dúvidas sobre produtos financeiros
-- ✅ Analisa padrões de gastos de forma educativa
+**O que o Edem faz:**
+- ✅ **Análise de Controladoria:** Interpreta DREs, Balanços e Fluxos de Caixa.
+- ✅ **Consultoria Empresarial:** Explica indicadores como EBITDA, ROI e Margem de Contribuição.
+- ✅ **Ciência de Dados Aplicada:** Transforma arquivos CSV/JSON em insights de negócio.
+- ✅ **Segurança Total:** Roda 100% localmente, garantindo que dados sigilosos da empresa não saiam do ambiente controlado.
 
-**O que o Edu NÃO faz:**
-- ❌ Não recomenda investimentos específicos
-- ❌ Não acessa dados bancários sensíveis
-- ❌ Não substitui um profissional certificado
+---
 
-## 🏗️ Arquitetura
+## 🏗️ Arquitetura do Sistema
 
 ```mermaid
 flowchart TD
-    A[Usuário] --> B[Streamlit]
-    B --> C[Ollama - LLM Local]
-    C --> D[Base de Conhecimento]
+    A[Usuário/Gestor] --> B[Interface Streamlit]
+    B --> C[Ollama - Processamento Local]
+    C --> D[Base de Conhecimento de Controladoria]
     D --> C
-    C --> E[Resposta Educativa]
-```
+    C --> E[Insights e Relatórios Estratégicos]
+Stack Técnica:
 
-**Stack:**
-- Interface: Streamlit
-- LLM: Ollama (modelo local `gpt-oss`)
-- Dados: JSON/CSV mockados
+Interface: Streamlit (Dashboard Interativo)
 
-## 📁 Estrutura do Projeto
+Cérebro (LLM): Ollama (Modelo local llama3 ou mistral)
 
-```
-├── data/                          # Base de conhecimento
-│   ├── perfil_investidor.json     # Perfil do cliente
-│   ├── transacoes.csv             # Histórico financeiro
-│   ├── historico_atendimento.csv  # Interações anteriores
-│   └── produtos_financeiros.json  # Produtos para ensino
-│
-├── docs/                          # Documentação completa
-│   ├── 01-documentacao-agente.md  # Caso de uso e persona
-│   ├── 02-base-conhecimento.md    # Estratégia de dados
-│   ├── 03-prompts.md              # System prompt e exemplos
-│   ├── 04-metricas.md             # Avaliação de qualidade
-│   └── 05-pitch.md                # Apresentação do projeto
-│
-└── src/
-    └── app.py                     # Aplicação Streamlit
-```
+Linguagem: Python (Pandas para manipulação de dados financeiros)
 
-## 🚀 Como Executar
+🚀 Como Executar o Edem
+1. Configurar o Ambiente de IA (Ollama)
+Certifique-se de ter o Ollama instalado e rodando o modelo de sua preferência:
 
-### 1. Instalar Ollama
+Bash
 
-```bash
-# Baixar em: ollama.com
-ollama pull gpt-oss
-ollama serve
-```
+ollama pull llama3
+2. Instalar Dependências
+Bash
 
-### 2. Instalar Dependências
+pip install streamlit pandas requests openpyxl
+3. Iniciar a Consultoria
+Bash
 
-```bash
-pip install streamlit pandas requests
-```
+streamlit run src/edem_app.py
+📊 Diferenciais Estratégicos
+Visão de Especialista: Diferente de IAs comuns, o Edem foi configurado com premissas de contabilidade consultiva.
 
-### 3. Rodar o Edu
+Privacidade (Privacy-First): Ideal para o setor contábil/financeiro, onde a confidencialidade é regra.
 
-```bash
-streamlit run src/app.py
-```
+Abordagem de Controladoria: Foco em eficiência operacional e saúde financeira de longo prazo.
 
-## 🎯 Exemplo de Uso
+👨‍💻 Autor
+Olivio Barreto Contador | Especialista em Controladoria, Finanças e Consultoria Empresarial Graduando em Ciência de Dados
 
-**Pergunta:** "O que é CDI?"  
-**Edu:** "CDI é uma taxa de referência usada pelos bancos. Quando um investimento rende '100% do CDI', significa que ele acompanha essa taxa. Hoje o CDI está próximo da Selic. Quer que eu explique a diferença entre os dois?"
+Projeto desenvolvido como parte da especialização em IA Generativa, unindo a expertise contábil com o poder da Ciência de Dados para o futuro da gestão empresarial.
 
-**Pergunta:** "Onde estou gastando mais?"  
-**Edu:** "Olhando suas transações de outubro, sua maior despesa é moradia (R$ 1.380), seguida de alimentação (R$ 570). Juntas, representam quase 80% dos seus gastos. Isso é bem comum! Quer que eu explique algumas estratégias de organização?"
 
-## 📊 Métricas de Avaliação
+---
 
-| Métrica | Objetivo |
-|---------|----------|
-| **Assertividade** | O agente responde o que foi perguntado? |
-| **Segurança** | Evita inventar informações (anti-alucinação)? |
-| **Coerência** | A resposta é adequada ao perfil do cliente? |
-
-## 🎬 Diferenciais
-
-- **Personalização:** Usa os dados do próprio cliente nos exemplos
-- **100% Local:** Roda com Ollama, sem enviar dados para APIs externas
-- **Educativo:** Foco em ensinar, não em vender produtos
-- **Seguro:** Estratégias de anti-alucinação documentadas
-
-## 📝 Documentação Completa
-
-Toda a documentação técnica, estratégias de prompt e casos de teste estão disponíveis na pasta [`docs/`](./docs/).
+### Por que este README funciona para você?
+1. **Autoridade:** Ele destaca que o bot não é apenas um "brinquedo", mas uma ferramenta de **contabilidade consultiva**.
+2. **Perfil Híbrido:** Ele deixa claro que você entende de finanças (Contador/Especialista) e de tecnologia (Ciência de Dados), o que é raríssimo e muito valorizado.
+3. **Foco em Segurança:** Mencionar que o processamento é local (Ollama) é um diferencial gigante para clientes qu
