@@ -13,12 +13,27 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-Cria um assistente basico de fluxo de caixa, organizando previsões de entradas e saidas.
+Cria um assistente basico de fluxo de caixa, organizando previsões de entradas e saidas, e compiação de resultados.
+
+De acordo com pesquisas do Sebrae e de consultorias especializadas em PMEs, estima-se que:
+
+75% dos empreendedores admitem ter dificuldades em monitorar as entradas e saídas de dinheiro (fluxo de caixa).
+
+58% dos pequenos negócios operam sem um orçamento estruturado, ou seja, não realizam o acompanhamento de previsto vs. realizado.
+
+Apenas 42% das empresas utilizam o fluxo de caixa como método efetivo de controle financeiro.
+
+O Retrato do "Escuro Financeiro"
+Cerca de 60% a 70% das micro e pequenas empresas não sabem ao certo qual é a sua margem de lucro real ou seu ponto de equilíbrio (o quanto precisam vender apenas para não ter prejuízo).
+
+Quase 50% dos empreendedores não utilizam ferramentas básicas de acompanhamento de resultados, como a DRE (Demonstrativo de Resultados do Exercício), limitando-se a olhar apenas o saldo bancário.
+
+9 em cada 10 PMEs que entram em crise financeira citam a "falta de indicadores de resultado" como um dos motivos principais, segundo dados de 2025.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-Possibilita a organização e previsibilidade, evitando surpresas indesejadas, sejam de falta de caixa, despesas desconhecidas ou datas desconexas.
+Possibilita a organização e previsibilidade, evitando surpresas indesejadas, sejam de falta de caixa, despesas desconhecidas ou datas desconexas, e facilidade para enxergar resultados.
 ### Público-Alvo
 > Quem vai usar esse agente?
 
